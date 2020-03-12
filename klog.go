@@ -96,6 +96,10 @@ func init() {
 	flag.Var(&logging.verbosity, "v", "log level for V logs")
 }
 
+// InitFlags is for explicitly initializing the flags.
+func InitFlags(flagset *flag.FlagSet) {
+}
+
 // Verbose is a shim
 type Verbose bool
 
